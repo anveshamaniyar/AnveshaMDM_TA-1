@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerFit Gym</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a2f5f;
+      color: white;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #004080;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { color: #ffdd57; margin: 0; }
+    nav { margin-top: 10px; }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { color: #ffdd57; }
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=1400&q=80') center/cover no-repeat;
+      text-align: center;
+    }
+    .hero h2 { color: #ffdd57; font-size: 40px; }
+    .btn {
+      background: #ffdd57;
+      color: #004080;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover { background: white; color: #004080; }
+    section { padding: 60px 20px; text-align: center; }
+    h1, h2 { color: #ffdd57; }
+    .steps, .class-box {
+      background: #0059b3;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ffdd57;
+      padding: 12px;
+    }
+    th { background: #ffdd57; color: #004080; }
+    td { background: #0059b3; }
+    .contact {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .contact form {
+      background: #0059b3;
+      padding: 20px;
+      border-radius: 12px;
+      width: 400px;
+    }
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+    .contact button {
+      background: #ffdd57;
+      color: #004080;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact button:hover { background: #ffffff; color: #004080; }
+    footer {
+      background: #00264d;
+      padding: 15px;
+      color: #ffdd57;
+      text-align: center;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>PowerFit Gym</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#join">Join</a>
+      <a href="#classes">Classes</a>
+      <a href="#membership">Membership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
+    <h2>Transform Your Body & Mind</h2>
+    <p>Start your fitness journey with us today!</p>
+    <a href="#join" class="btn">Join Now</a>
+    <a href="#classes" class="btn">View Classes</a>
+    <a href="#membership" class="btn">Membership Plans</a>
+  </section>
+
+  <!-- JOIN -->
+  <section id="join">
+    <h1>Steps to Join PowerFit Gym</h1>
+    <div class="steps">
+      <p>1️⃣ Fill out the registration form.</p>
+      <p>2️⃣ Choose your membership plan.</p>
+      <p>3️⃣ Make the payment at reception.</p>
+      <p>4️⃣ Start your training with us!</p>
+      <img src="https://images.unsplash.com/photo-1599058917216-d69f9b9aaf9f?fit=crop&w=600&q=80" alt="Join Gym">
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section id="classes">
+    <h1>Our Classes</h1>
+    <div class="class-box">
+      <h2>Yoga & Meditation</h2>
+      <p>Balance your body and mind with our yoga experts.</p>
+      <img src="https://images.unsplash.com/photo-1554344728-77cf90d9ed26?fit=crop&w=600&q=80" alt="Yoga Class">
+    </div>
+    <div class="class-box">
+      <h2>Strength Training</h2>
+      <p>Build muscle and power with expert guidance.</p>
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=600&q=80" alt="Strength Training">
+    </div>
+    <div class="class-box">
+      <h2>Cardio Blast</h2>
+      <p>High intensity cardio to boost stamina & burn calories.</p>
+      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b72?fit=crop&w=600&q=80" alt="Cardio Training">
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section id="membership">
+    <h1>Membership Pricing</h1>
+    <table>
+      <tr>
+        <th>Plan</th>
+        <th>Duration</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Basic</td>
+        <td>1 Month</td>
+        <td>₹2000</td>
+      </tr>
+      <tr>
+        <td>Standard</td>
+        <td>6 Months</td>
+        <td>₹10,000</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>12 Months</td>
+        <td>₹18,000</td>
+      </tr>
+    </table>
+    <img src="https://images.unsplash.com/photo-1571019613913-6e7c89b6f39b?fit=crop&w=600&q=80" alt="Gym Membership">
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <form>
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="number" placeholder="Phone" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Location: PowerFit Gym, MG Road, Pune, India</p>
+    <!-- Embedded Google Map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.296814198744!2d73.8567432148927!3d18.52043068740588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06e2f2c3f0f%3A0x9f8a379f6d8f8d12!2sMG%20Road%2C%20Pune%2C%20India!5e0!3m2!1sen!2sin!4v1610000000000"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p>&copy; 2025 PowerFit Gym | Follow us: Facebook | Instagram | Twitter</p>
+  </footer>
+
+</body>
+</html>
